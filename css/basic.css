@@ -1,0 +1,232 @@
+/*------------------------------------*\
+  RESET
+\*------------------------------------*/
+body, div, dl, dt, dd, ul, ol, li,
+h1, h2, h3, h4, h5, h6,
+pre, form, fieldset, input, textarea,
+p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset, img {
+  border: 0;
+}
+address, caption, cite, dfn, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+caption, th {
+  text-align: left;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+q:before, q:after {
+  content: '';
+}
+abbr, acronym {
+  border: 0;
+}
+
+/*------------------------------------*\
+  MAIN
+\*------------------------------------*/
+
+html {
+	font-family: Cambria, Georgia, "Times New Roman", Times, serif;
+	color: #FFFFFF;
+}
+
+body {
+	width: 700px;
+	margin: 0 auto;
+	background: url(../images/bg.png) center center no-repeat #35587b;
+	line-height: 1.5em;
+	padding-top: 72px;
+	text-shadow:0 1px 4px rgba(0,0,0,0.68);
+}
+
+body:hover {
+	background: url(grid-01.png) center -6px repeat-y #fff;
+}
+
+/*------------------------------------*\
+  TYPE
+\*------------------------------------*/
+/*--- HEADINGS ---*/
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 24px;
+	font-weight: bold;
+}
+
+/*--- PARAGRAPHS ---*/
+p {
+	margin-bottom: 24px;
+	color: #111;
+	text-shadow:0 1px 1px rgba(96,134,167,0.68);
+}
+
+p+p {
+  text-indent: 1em;
+  margin-top: -24px;
+}
+
+/*--- HEADINGS ---*/
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 24px;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 1.5em;
+	line-height: 1em;
+}
+
+h2 {
+	font-size: 1.375em;
+	line-height: 1.0909em;
+}
+
+h3 {
+	font-size: 1.25em;
+	line-height: 1.2em;
+}
+
+h4 {
+	font-size: 1.125em;
+	line-height: 1.333em;
+}
+
+h5, h6 {
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+/*------------------------------------*\
+  ELEMENT
+\*------------------------------------*/
+/*--- NAVIGATION ---*/
+
+#nav {
+	margin: 0;
+	padding: 0 0 20px 10px;
+/*	border-bottom: 1px solid #FFF;*/
+	width: 100%;
+}
+
+#nav li {
+	margin: 0; 
+	padding: 0;
+	display: inline;
+	list-style-type: none;
+}
+
+#nav a:link, #nav a:visited {
+	float: left;
+	font-size: 1.125em;
+	line-height: 24px;
+	font-weight: bold;
+	padding: 0 24px 12px 24px;
+	text-decoration: none;
+	color: #AAA;
+}
+
+#nav a:link.active, #nav a:visited.active, #nav a:hover {
+	color: #FFF;
+	background: url(../images/tab_rounded.gif) no-repeat bottom center;
+}
+
+/*--- FOOD/EXERCISE DIARY---*/
+#diary-form {
+	padding-bottom: 4em;
+}
+
+#diary {
+	width: 100%;
+	background: rgba(255,255,255,0.68);
+	text-shadow:0 1px 2px rgba(0,0,0,0.28);
+}
+
+#diary, th, td {
+	border: 1px solid #4F76A3;
+	border-collapse: collapse;
+	font-family: "Trebuchet MS", Arial, sans-serif;
+	color: #222;
+}
+
+#diary caption {
+	font-size: 100%;
+	font-weight: bold;
+	margin: 5px;
+}
+
+#diary td, th {
+	padding: 4px;
+}
+
+#diary thead th {
+	text-align: center;
+	background: #E6EDF5;
+	color: #4F76A3;
+	font-size: 100% !important;
+}
+
+#diary tbody tr {
+	color: #4F76A3;
+	font-size: 80% !important;
+}
+
+#diary .valuegrams
+{
+	width: 4em;
+}
+
+#diary tbody th {
+	font-weight: bold;
+}
+
+#diary colgroup .column_protein {
+	background: #ccffcc;
+}
+
+#diary colgroup .column_carbohydrate {
+	background: #ccccff;
+}
+
+#diary colgroup .column_fat {
+	background: #ffcccc;
+}
+
+#diary colgroup .column_fiber {
+	background: #d7d7a6;
+}
+
+#diary table a:link {
+	color: #718ABE;
+	text-decoration: none;
+}
+
+#diary table a:visited {
+	color: #718ABE;
+	text-decoration: none;
+}
+
+#diary table a:hover {
+	color: #718ABE;
+	text-decoration: underline !important;
+}
+
+#diary tfoot th, tfoot td {
+	font-size: 70%;
+}
+
+#diary input {
+	width: 1em;
+}
+
