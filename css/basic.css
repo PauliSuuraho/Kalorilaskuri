@@ -47,13 +47,13 @@ body {
 	margin: 0 auto;
 	background: url(../images/bg.png) center center no-repeat #35587b;
 	line-height: 1.5em;
-	padding-top: 72px;
+	padding-top: 15px;
 	text-shadow:0 1px 4px rgba(0,0,0,0.68);
 }
 
-body:hover {
+/*body:hover {
 	background: url(grid-01.png) center -6px repeat-y #fff;
-}
+}/*
 
 /*------------------------------------*\
   TYPE
@@ -142,6 +142,40 @@ h5, h6 {
 	background: url(../images/tab_rounded.gif) no-repeat bottom center;
 }
 
+/*--- SEARCH PANEL ---*/
+#search {
+	padding: 0px;
+	margin: 0px;
+	border: 1px solid #4F76A3;
+	border-bottom: 0px;
+	background: rgba(255,255,255,0.68);
+	text-shadow:0 1px 2px rgba(0,0,0,0.28);
+	font-family: "Trebuchet MS", Arial, sans-serif;
+	font-size: 70%;
+	color: #222;
+	text-align: right;
+}
+
+/*--- LOGIN BOX ---*/
+#login {
+	padding: 0px;
+	margin: 0px;
+}
+
+#login input {
+	margin-right: 19px;
+}
+
+/*--- CONTENT ---*/
+#content {
+	margin-top: 45px; 
+}
+
+/*--- Page CONTENT ---*/
+#pagecontent {
+	margin-top: 45px; 
+}
+
 /*--- FOOD/EXERCISE DIARY---*/
 #diary-form {
 	padding-bottom: 4em;
@@ -153,21 +187,19 @@ h5, h6 {
 	text-shadow:0 1px 2px rgba(0,0,0,0.28);
 }
 
-#diary, th, td {
-	border: 1px solid #4F76A3;
-	border-collapse: collapse;
-	font-family: "Trebuchet MS", Arial, sans-serif;
-	color: #222;
-}
-
 #diary caption {
 	font-size: 100%;
 	font-weight: bold;
 	margin: 5px;
 }
 
-#diary td, th {
-	padding: 4px;
+#diary th, td {
+	border: 1px solid #4F76A3;
+	border-collapse: collapse;
+	font-family: "Trebuchet MS", Arial, sans-serif;
+	color: #222;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 #diary thead th {
@@ -184,11 +216,17 @@ h5, h6 {
 
 #diary .valuegrams
 {
-	width: 4em;
+	width: 2.8em;
 }
 
 #diary tbody th {
 	font-weight: bold;
+}
+
+#diary tbody .foodselector {
+	text-align: center;
+	width: 28px;
+	padding: 0px;
 }
 
 #diary colgroup .column_protein {
@@ -229,4 +267,5 @@ h5, h6 {
 #diary input {
 	width: 1em;
 }
+
 
