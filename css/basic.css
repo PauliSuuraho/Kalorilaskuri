@@ -58,12 +58,6 @@ body {
 /*------------------------------------*\
   TYPE
 \*------------------------------------*/
-/*--- HEADINGS ---*/
-
-h1, h2, h3, h4, h5, h6 {
-	margin-bottom: 24px;
-	font-weight: bold;
-}
 
 /*--- PARAGRAPHS ---*/
 p {
@@ -79,9 +73,11 @@ p+p {
 
 /*--- HEADINGS ---*/
 h1, h2, h3, h4, h5, h6 {
+	margin-top: 24px;
 	margin-bottom: 24px;
 	font-weight: bold;
 }
+
 
 h1 {
 	font-size: 1.5em;
@@ -187,6 +183,14 @@ h5, h6 {
 	text-shadow:0 1px 2px rgba(0,0,0,0.28);
 }
 
+#diary .foodrow {
+	background: rgba(217,127,127,0.28);
+}
+
+#diary .exerciserow {
+	background: rgba(149,186,241,0.68);
+}
+
 #diary caption {
 	font-size: 100%;
 	font-weight: bold;
@@ -267,5 +271,12 @@ h5, h6 {
 #diary input {
 	width: 1em;
 }
+
+/*--- borderless table ---*/
+.borderless, .borderless td, .borderless tr {
+	border: 0px;
+	color: #fff;
+}
+
 
 
