@@ -508,7 +508,10 @@ class Diary extends CI_Controller {
 		$headerdata['pagetitle'] = 'P&auml;iv&auml;kirja';
 		$headerdata['islogged'] = $this->user_model->islogged();
 		$data = $this->user_model->diarydate();
-
+		$day = $data['day'];
+		$month = $data['month'];
+		$year = $data['year'];
+		
 		if (isset($_POST['add']))
 		{
 		foreach ($_POST['add'] as $exerciseid)
@@ -573,7 +576,7 @@ class Diary extends CI_Controller {
 			{
 				$minutes = '0'.$minutes;
 			}
-			$added = date ("Y-m-d H:i:s", strtotime($data['day']."-".$data['month']."-".$data['year']." "."$hours:$minutes:$seconds"));
+			$added = date ("Y-m-d H:i:s", strtotime($day."-".$month."-".$year." "."$hours:$minutes:$seconds"));
 			
 			$data = array(
 				'duration' => "$amount" ,
